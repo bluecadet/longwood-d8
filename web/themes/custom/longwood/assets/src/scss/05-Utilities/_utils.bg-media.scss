@@ -1,0 +1,49 @@
+// Full size background image
+.u-bg-cover {
+  @include bkg-img();
+}
+
+// Full size object fit image
+.u-img-cover {
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+// Full size video
+.u-video-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  video {
+    // Make video at least 100% wide and tall
+    min-width: 100%;
+    min-height: 100%;
+
+    // Setting width & height to auto prevents the browser from stretching or squishing the video
+    width: auto;
+    height: auto;
+
+    // Center the video
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

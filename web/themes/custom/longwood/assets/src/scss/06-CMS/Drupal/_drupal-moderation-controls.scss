@@ -1,0 +1,32 @@
+.content-moderation-entity-moderation-form {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.entity-moderation-form {
+  background-color: lighten($c-orange, 40%);
+  border: 0;
+  margin: 2em 0;
+  padding-left: 1em;
+  box-shadow: 0 1rem 1.5rem -1.25rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entity-moderation-form__item {
+  margin-right: 2em;
+  display: table;
+  flex: 1 0 auto;
+
+  &:last-of-type {
+    flex: 1 0 100%;
+  }
+}
+
+.entity-moderation-form .form-item label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}

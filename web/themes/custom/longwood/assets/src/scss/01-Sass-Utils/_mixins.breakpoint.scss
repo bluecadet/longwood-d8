@@ -1,0 +1,72 @@
+////
+/// Breakpoint Mixins
+/// @group Mixins
+/// @author Bluecadet
+////
+
+/// -----
+/// Break
+///
+/// Create a new breakpoint. Use in conjunction with breakpoint variables.
+///
+/// @param {various} $size  - Either string (900px) or map (min-height: 900px), or false
+/// @param {string}  $media [only screen] - Media type
+///
+/// @require {variable} default-breakpoint-attr
+///
+/// @example scss - Basic Usage Sass
+///   div {
+///     font-size: 12px;
+///
+///     // Use a breakpoint variable
+///     @include break($medium) {
+///       font-size: 16px;
+///     }
+///
+///     // Use a px, em, or rem value
+///     @include break(1024px) {
+///       font-size: 16px;
+///     }
+///   }
+///
+///
+///   div {
+///     font-size: 16px;
+///
+///     // Use a map to include multiple breakpoint queries
+///     @include break((min-width: 1024px, min-height: 1031px)) {
+///       font-size: 10px;
+///     }
+///
+///     // Set $size to false to only query by media type
+///     @include break(false, print) {
+///       font-size: 10px;
+///     }
+///   }
+/// -----
+
+@mixin break($size, $media: only screen) {
+  $_set-point: '';
+
+  @if $size {
+    @if type-of($size) == 'map' {
+      // ex. (max-width: 900px, max-height, 700px)
+
+      @each $attr, $val in $size {
+        $_set-point: $_set-point + 'and (#{$attr}: #{$val})';
+      }
+    } @else {
+      // Assume it's a value for default break
+
+      $_set-point: 'and (#{$default-breakpoint-attr}: #{$size})';
+    }
+
+    @media #{$media} #{$_set-point} {
+      @content;
+    }
+  } @else {
+    @media #{$media} {
+      @content;
+    }
+  }
+}

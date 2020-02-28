@@ -1,0 +1,12 @@
+<div class="color-blocks">
+  {% for color in colors %}
+    <div class="color-block">
+      <div class="color-block__tile u-bg-{{ color }}"></div>
+      <div class="color-block__name"><span class="fractal-label">Sass:</span> <code class="fractal-code">${{ color }}</code></div>
+      <div class="color-block__name"><span class="fractal-label">Color Class:</span> <code class="fractal-code">.u-c-{{ color }}</code></div>
+      <div class="color-block__name"><span class="fractal-label">Background Class:</span> <code class="fractal-code">.u-bg-{{ color }}</code></div>
+      <div class="color-block__name"><span class="fractal-label">Fill Class:</span> <code class="fractal-code">.u-fill-{{ color }}</code></div>
+      <div class="color-block__name"><span class="fractal-label">Stroke Class:</span> <code class="fractal-code">.u-stroke-{{ color }}</code></div>
+    </div>
+  {% endfor %}
+</div>

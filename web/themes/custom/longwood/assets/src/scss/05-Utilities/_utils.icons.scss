@@ -1,0 +1,16 @@
+.u-icon {
+  overflow: visible;
+}
+
+.u-icon--small {
+  width: 2.5rem;
+
+  path,
+  polygon {
+    stroke-width: 2.3;
+  }
+}
+
+span[class^='u-svg'] {
+  display: flex;
+}

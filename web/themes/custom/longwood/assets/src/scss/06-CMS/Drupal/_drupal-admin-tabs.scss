@@ -1,0 +1,96 @@
+.admin-tabs-control {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  min-height: 11rem;
+  transform: translateY(-50%);
+  text-align: center;
+  color: $c-white;
+  background: rgba(#212121, 0.85);
+  writing-mode: vertical-lr;
+  padding: 1.25rem 0.8rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  transform-origin: center;
+  border-radius: 0 0.25rem 0.25rem 0;
+  cursor: pointer;
+  transition: background-color 200ms $easeInOutQuad;
+  z-index: 1000;
+
+  &:hover {
+    background-color: rgba(#212121, 1);
+  }
+}
+
+.admin-tabs {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 30rem;
+  z-index: 1000;
+}
+
+.admin-tabs--open {
+  display: block;
+}
+
+#block-bucknell-primary-local-tasks {
+  height: 100%;
+  background-color: rgba(#212121, 0.75);
+  border-radius: 0.25rem;
+  cursor: move;
+  transition: background-color 200ms $easeInOutQuad;
+
+  &:hover {
+    background-color: rgba(#212121, 1);
+  }
+}
+
+.admin-tabs__inner {
+  height: 100%;
+}
+
+.tabs.primary {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+
+  li {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &.is-active {
+      a {
+        background-color: $c-blue-med;
+        color: $c-white;
+      }
+
+      &:hover a {
+        background-color: darken($c-blue-med, 10%);
+        color: $c-white;
+      }
+    }
+
+    a {
+      @include button_base;
+      text-transform: uppercase;
+      padding: 0.8rem 1.4rem;
+      display: block;
+      text-align: center;
+      border-radius: 0.5rem;
+    }
+
+    &:hover {
+      a {
+        background-color: lighten($c-blue-med, 50%);
+        color: $c-blue-dark;
+      }
+    }
+  }
+}

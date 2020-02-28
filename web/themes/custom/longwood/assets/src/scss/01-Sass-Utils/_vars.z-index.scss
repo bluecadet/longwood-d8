@@ -1,0 +1,20 @@
+////
+/// Utility Variables
+///
+/// These don't have a specific place, and they gotta be somewhere
+///
+/// @group Variables
+/// @author Bluecadet
+////
+
+$z-indexes: (
+  modal: (
+    background-screen,
+  ),
+  header: (
+    header-content,
+    main-nav-link,
+    dropdown-nav,
+  ),
+  breadcrumbs: (),
+);

@@ -1,0 +1,30 @@
+////
+/// Typography variables
+///
+/// Prefix font-related variables with `$f-`
+///
+/// @group Variables
+/// @author Bluecadet
+////
+
+// =============
+// Font Families
+// =============
+$f-sans: sans-serif;
+$f-condensed: sans-serif;
+$f-serif: serif;
+
+// ===========================
+// Font Sizes and Line Heights
+// ===========================
+$f-base-size: 2rem;
+$f-base-line-height: 1.44;
+
+// ============
+// Font Weights
+// ============
+// match variable name to font file weight (i.e. `$f-medium` for `Freight Sans Medium`)
+$f-book: 400;
+$f-medium: 500;
+$f-bold: 700;
+$f-black: 900;

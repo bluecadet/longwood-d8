@@ -1,0 +1,15 @@
+<div>
+  <h2>{{ data.title }}</h2>
+  <p>This is a complex component, which needs to call a child component. This is the main component.</p>
+  <ul>
+    {% for number in item_count %}
+      {%
+        include '@fractal/05-components/complex-component/complex-component-item' with {
+          use_li: true,
+          data: {
+            item_number: loop.index
+          }
+        }
+      %}
+    {% endfor %}
+  </ul>

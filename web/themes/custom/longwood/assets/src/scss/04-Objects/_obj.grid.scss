@@ -1,0 +1,79 @@
+// ----
+// Modified version of Flexbox Grid Sass by Huge Inc.
+//
+// https://github.com/hugeinc/flexboxgrid-sass
+// ----
+
+$grid-output-classes: true !default;
+
+@if $grid-output-classes == true {
+  // Base Containers
+  .o-container {
+    @include flexContainer(90%);
+  }
+
+  .o-container-fluid {
+    @include flexContainer(100%, true);
+  }
+
+  // Base Row
+  .o-row {
+    @include flexRow;
+  }
+
+  // Base Column
+  .o-col {
+    @include flexColFull();
+  }
+
+  // Column classes
+  @for $i from 1 through $grid-columns {
+    .o-col-#{$i} {
+      @include flexColCommon;
+      @include flexCol($i);
+    }
+
+    .o-col--offset-#{$i} {
+      @include flexColOffset($i);
+    }
+  }
+
+  @each $breakpoint in $flexgridBreakpoints {
+    $name: nth($breakpoint, 1);
+    $size: nth($breakpoint, 2);
+    $container: nth($breakpoint, 3);
+
+    @media only screen and (min-width: $size) {
+      .o-container {
+        width: $container;
+      }
+
+      .o-row-#{$name} {
+        @include flexRow;
+      }
+
+      @for $i from 1 through $grid-columns {
+        .o-col-#{$name}-#{$i} {
+          // @include flexColCommon;
+          @include flexCol($i);
+        }
+
+        .o-col-#{$name}--hide {
+          display: none;
+        }
+
+        .o-col-#{$name}--show {
+          display: block;
+        }
+
+        .o-col-#{$name}--offset-#{$i} {
+          @include flexColOffset($i);
+        }
+      }
+
+      .o-col-#{$name} {
+        @include flexColAuto();
+      }
+    }
+  }
+}

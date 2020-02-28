@@ -1,0 +1,52 @@
+// ----
+// SCSS ORGANIZATION:
+//
+// The CSS for this project is organized according to the ITCSS methodology.
+// The principles of ITCSS organize file structure to guide specificity in a
+// downward flow, from wide-reaching to very specific.
+//
+// 01_Settings.......Variables that are public to the project
+//
+// 02_Tools..........Mixins and functions that are public to the project
+//
+// 03_Generic........High-level, far reaching styles. Ex: reset.scss, *, html, etc.
+//
+// 04_Vendor.........Vendor specific CSS & SCSS files
+//
+// 05_Objects........Non-cosmetic design patterns. Ex: grid classes, sidebar classes, etc.
+//
+// 06_Utilities......Classes with very specific purposes. They are useful for reuse but
+//                   specific and succinct in their implementation. Ex: cover, caps, etc.
+//
+// 07_Drupal........Drupal specific CSS & SCSS files
+//
+// Component & Modules SCSS files live alongside their respective Twig & Config files
+//
+// ------------------------------------------------------------------------------------------------
+//
+// CLASS NAMING CONVENTIONS:
+// Classes are implemented in a BEM (Block/Element/Modifier) structure, and prepended with
+// their ITCSS type. This means that `Objects` are prepended with `o-`, `modules` are prepended
+// with `m-`, etc.
+//
+// @link https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+//
+// ------------------------------------------------------------------------------------------------
+//
+// MORE INFO ON THE BLUECADET CSS STYLE GUIDE:
+// https://github.com/bluecadet/saucepot/wiki/CSS-Style-Guide
+//
+// ------------------------------------------------------------------------------------------------
+
+@import '01-Sass-Utils/base';
+@import '02-Generic/base';
+@import '03-Vendor/base';
+@import '04-Objects/base';
+
+// Fractal Components
+@import '../../../fractal/components/**/*.scss';
+
+@import '05-Utilities/base';
+
+// CMS Overrides (Admin, etc)
+// @import '06-CMS/base';

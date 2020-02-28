@@ -1,0 +1,61 @@
+////
+/// Typography Mixins
+///
+/// Build typography styles as mixins before adding them to
+/// classes. This allows style reuse without calling `@extend`
+///
+/// @group Mixins
+/// @author Bluecadet
+////
+
+
+@mixin title--xl {
+  line-height: 1;
+  font-weight: $f-bold;
+  letter-spacing: -0.2rem;
+  $map: (
+    320px: 48px,
+    1680px: 86px,
+  );
+  @include poly-fluid-sizing('font-size', $map);
+}
+
+@mixin title--large {
+  line-height: 1;
+  font-weight: $f-black;
+  letter-spacing: -0.1rem;
+  $map: (
+    320px: 48px,
+    1680px: 65px,
+  );
+  @include poly-fluid-sizing('font-size', $map);
+}
+
+@mixin title--medium {
+  line-height: 1;
+  font-weight: $f-black;
+  letter-spacing: -0.09rem;
+  $map: (
+    320px: 32px,
+    1680px: 48px,
+  );
+  @include poly-fluid-sizing('font-size', $map);
+}
+
+@mixin title--small {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: $f-bold;
+}
+
+@mixin title--xs {
+  font-size: 2.3rem;
+  line-height: 1.1;
+  font-weight: $f-bold;
+}
+
+@mixin title--xxs {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: $f-bold;
+}

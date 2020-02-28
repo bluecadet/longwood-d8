@@ -1,0 +1,33 @@
+.user-login-form {
+  max-width: 45rem;
+  margin: 0 auto $space-xxl;
+  padding: $space-l;
+  background-color: $c-blue-light;
+
+  h2 {
+    @include title--small;
+    margin-bottom: $space-s;
+  }
+}
+
+.toolbar-horizontal,
+.toolbar-vertical {
+  .m-site-header--transparent {
+    /* stylelint-disable-next-line unit-blacklist */
+    top: 39px;
+  }
+}
+
+.toolbar-tray-open {
+  .m-site-header--transparent {
+    /* stylelint-disable-next-line unit-blacklist */
+    top: 79px;
+  }
+
+  &.toolbar-vertical {
+    .m-site-header--transparent {
+      /* stylelint-disable-next-line unit-blacklist */
+      top: 39px;
+    }
+  }
+}

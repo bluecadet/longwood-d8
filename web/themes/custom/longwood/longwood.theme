@@ -1,0 +1,186 @@
+<?php
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Link;
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements HOOK_preprocess_html().
+ */
+// function longwood_preprocess_html(&$variables) {
+
+// }
+
+/**
+ * Implements HOOK_preprocess_region().
+ */
+// function longwood_preprocess_region(&$variables) {
+
+// }
+
+/**
+ * Implements HOOK_preprocess_page_title().
+ */
+// function longwood_preprocess_page_title(&$variables) {
+
+// }
+
+/**
+ * Implements HOOK_preprocess_node().
+ */
+function longwood_preprocess_node(&$variables) {
+  $node = $variables['elements']['#node'];
+  $variables['data'] = NULL;
+
+  // switch ($node->bundle()) {
+  //   case '':
+  //     break;
+  // }
+}
+
+/**
+ * Implements HOOK_theme_suggestions_paragraph_alter().
+ */
+function longwood_theme_suggestions_paragraph_alter(&$suggestions, $variables) {
+  $paragraph = $variables['elements']['#paragraph'];
+  $suggestions[] = "paragraph__" . $paragraph->parent_field_name->value . "__" . $paragraph->bundle();
+}
+
+/**
+ * Implements HOOK_preprocess_paragraph().
+ */
+function longwood_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['elements']['#paragraph'];
+  $variables['data'] = NULL;
+
+  // switch ($paragraph->bundle()) {
+  //   case '':
+  //     break;
+  // }
+}
+
+/**
+ * Implements HOOK_preprocess_taxonomy_term().
+ */
+function longwood_preprocess_taxonomy_term(&$variables) {
+  $term = $variables['term'];
+
+  // switch($term->getVocabularyId()) {
+  //   case '':
+  //     break;
+  // }
+}
+
+/**
+ * Implements HOOK_preprocess_block().
+ */
+// function longwood_preprocess_block(&$variables) {
+
+// }
+
+/**
+ * Implements HOOK_theme_suggestions_field_alter().
+ */
+// function longwood_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+
+// }
+
+/**
+ * Implements HOOK_preprocess_field().
+ */
+function longwood_preprocess_field(&$variables) {
+
+  // Add Paragraph index to each paragraph entity.
+  if ($variables['field_type'] == 'entity_reference_revisions') {
+    foreach($variables['items'] as $idx => $item) {
+      $variables['items'][$idx]['content']['#paragraph']->index = $idx;
+    }
+  }
+
+  // switch ($variables['field_name']) {
+  //   case '':
+  //     break;
+  // }
+}
+
+/**
+ * Implements HOOK_preprocess_media().
+ */
+function longwood_preprocess_media(&$variables) {
+  $media = $variables['elements']['#media'];
+
+  // switch ($media->bundle()) {
+  //   case '':
+  //     break;
+  // }
+}
+
+/**
+ * Implements HOOK_preprocess_breadcrumb().
+ */
+// function longwood_preprocess_breadcrumb(&$variables) {
+
+// }
+
+/**
+ * Helper function to get field values used in fractal.
+ *
+ * @param object $entity
+ * @param array $variables
+ * @param object $field
+ * @param [type] $default_empty
+ * @return void
+ */
+function data_field_value($entity, $variables, $field, $default_empty = NULL) {
+  $val = $default_empty;
+
+  if ($entity->hasField($field) && !$entity->{$field}->isEmpty() && isset($variables['content'][$field])) {
+    $val = $variables['content'][$field];
+  }
+
+  return $val;
+}
+
+/**
+ * Helper function to get field values used in fractal, regardless of set
+ * display_mode.
+ *
+ * @param object $entity
+ * @param object $field
+ * @param [type] $display_mode
+ * @param [type] $default_empty
+ * @return void
+ */
+function data_field_value_with_display_mode($entity, $field, $display_mode = "default", $default_empty = NULL) {
+  $val = $default_empty;
+
+  if ($entity->hasField($field) && !$entity->{$field}->isEmpty()) {
+    $val = $entity->{$field}->view($display_mode);
+  }
+
+  return $val;
+}
+
+/**
+ * Helper Function to add classes to all menu items in a menu tree.
+ *
+ * @param array $items
+ * @param array $classes
+ * @return void
+ */
+function _add_menu_item_classes_recursively(&$items, array $classes) {
+  foreach ($items as &$item) {
+    $item['url']->mergeOptions([
+      'attributes' => [
+        'class' => $classes,
+      ],
+    ]);
+
+    if (isset($item['below']) && !empty($item['below'])) {
+      _add_menu_item_classes_recursively($item['below'], $classes);
+    }
+  }
+}

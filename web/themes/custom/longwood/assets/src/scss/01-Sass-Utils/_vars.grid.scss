@@ -1,0 +1,66 @@
+////
+/// Grid Variables
+/// @group Variables
+/// @author Bluecadet
+////
+
+/// --------------------
+/// Flexgrid Breakpoints
+///
+/// Map format: (name BREAKPOINT_SIZE(rem) MAX_CONTAINER_SIZE(rem))
+/// --------------------
+$flexgridBreakpoints: (
+  (xs, $xs, $xs-container),
+  (xs-sm, $xs-sm, $xs-sm-container),
+  (sm, $sm, $sm-container),
+  (sm-md, $sm-md, $sm-md-container),
+  (md, $md, $md-container),
+  (lg, $lg, $lg-container),
+  (xl, $xl, $xl-container)
+);
+
+// ===========
+// Scaffolding
+// ===========
+
+/// Whether or not to output grid classes
+$grid-output-classes: true;
+
+/// max width of grid container
+$container-max-width: 168rem;
+
+/// max width of body
+$site-max-width: 100%;
+
+// ==================================
+// Defaults for grid and break mixins
+// ==================================
+
+/// Grid Columns (int)
+$grid-columns: 12;
+
+/// Width of grid gutter
+$gutter-width: $space-l;
+
+/// Buffer between grid and edge of container
+$grid-outer-margin: $space-xl;
+
+/// Default for breakpoint mixin
+$default-breakpoint-attr: min-width;
+
+$grid-outer-margin-start: $space-m;
+
+/* prettier-ignore */
+$grid-outer-margin-breakpoints: (
+  ($sm, $grid-outer-margin),
+) !default;
+
+// ============================
+// GRID CALC VARS - DO NOT EDIT
+// ============================
+
+/// @access private
+$gutter-compensation: $gutter-width * 0.5 * -1;
+
+/// @access private
+$half-gutter-width: $gutter-width * 0.5;

@@ -1,0 +1,44 @@
+## $xs:    (480 / 16)  * 1em;    // 30em
+## $sm:    (720 / 16)  * 1em;   // 45em
+## $sm-md: (970 / 16)  * 1em;   // 60.625em
+## $md:    (1080 / 16) * 1em;   // 67.5em
+## $lg:    (1220 / 16) * 1em;   // 76.25em
+## $xl:    (1400 / 16) * 1em;   // 87.5em
+## ------------------------------------------
+
+longwood.xs:
+  label: xs
+  mediaQuery: 'screen and (min-width: 30em)'
+  weight: 0
+  multipliers:
+    - 1x
+longwood.sm:
+  label: sm
+  mediaQuery: 'screen and (min-width: 45em)'
+  weight: 0
+  multipliers:
+    - 1x
+longwood.sm-md:
+  label: sm-md
+  mediaQuery: 'screen and (min-width: 60.625em)'
+  weight: 1
+  multipliers:
+    - 1x
+longwood.md:
+  label: md
+  mediaQuery: 'screen and (min-width: 67.5em)'
+  weight: 1
+  multipliers:
+    - 1x
+longwood.lg:
+  label: lg
+  mediaQuery: 'screen and (min-width: 76.25em)'
+  weight: 1
+  multipliers:
+    - 1x
+longwood.xl:
+  label: xl
+  mediaQuery: 'screen and (min-width: 87.5em)'
+  weight: 1
+  multipliers:
+    - 1x

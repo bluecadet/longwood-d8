@@ -1,0 +1,116 @@
+// ----
+// Margin and Padding classes
+//
+// See $spaces in 01-Settings/_vars.spacing.scss
+//
+// To utilize responsive utility classes, prepend with a breakpoint size
+// ex: class="u-mar-bottom-s md:u-mar-bottom-l lg:u-mar-bottom-m"
+// ----
+
+$directions: ('top', 'right', 'bottom', 'left');
+
+@each $name, $value, $direction, $sides in $spaces {
+  .u-mar-#{$name} {
+    margin: $value;
+  }
+
+  .u-pad-#{$name} {
+    padding: $value;
+  }
+
+  @each $direction in $directions {
+    .u-mar-#{$direction}-#{$name} {
+      margin-#{$direction}: $value;
+    }
+
+    .u-pad-#{$direction}-#{$name} {
+      padding-#{$direction}: $value;
+    }
+  }
+
+  .u-mar-horz-#{$name} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .u-pad-horz-#{$name} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .u-mar-vert-#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .u-pad-vert-#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+@each $bp, $width in $breakpoints {
+  @each $name, $value, $direction, $sides in $spaces {
+    .#{$bp}\:u-mar-#{$name} {
+      @include break($width) {
+        margin: $value;
+      }
+    }
+
+    .#{$bp}\:u-pad-#{$name} {
+      @include break($width) {
+        padding: $value;
+      }
+    }
+
+    @each $direction in $directions {
+      .#{$bp}\:u-mar-#{$direction}-#{$name} {
+        @include break($width) {
+          margin-#{$direction}: $value;
+        }
+      }
+
+      .#{$bp}\:u-pad-#{$direction}-#{$name} {
+        @include break($width) {
+          padding-#{$direction}: $value;
+        }
+      }
+    }
+
+    .#{$bp}\:u-mar-horz-#{$name} {
+      @include break($width) {
+        margin-left: $value;
+        margin-right: $value;
+      }
+    }
+
+    .#{$bp}\:u-pad-horz-#{$name} {
+      @include break($width) {
+        padding-left: $value;
+        padding-right: $value;
+      }
+    }
+
+    .#{$bp}\:u-mar-vert-#{$name} {
+      @include break($width) {
+        margin-top: $value;
+        margin-bottom: $value;
+      }
+    }
+
+    .#{$bp}\:u-pad-vert-#{$name} {
+      @include break($width) {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
+    }
+  }
+}
+
+.u-vertical-rhythm {
+  margin-bottom: $space-xxl;
+
+  @include break($sm) {
+    margin-bottom: $space-xxxl;
+  }
+}

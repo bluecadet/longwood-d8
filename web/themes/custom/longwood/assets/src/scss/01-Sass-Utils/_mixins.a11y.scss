@@ -1,0 +1,54 @@
+////
+/// Accessibility Mixins
+/// @group Mixins
+/// @author Bluecadet
+////
+
+///
+/// Visually Hidden
+///
+/// Hide element visually, but allow screen readers access to content
+///
+@mixin visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+///
+/// Visually Un-Hidden
+///
+/// Undo the effects of `@mixin visually-hidden`
+///
+@mixin visually-unhidden {
+  clip: auto !important;
+  clip-path: none;
+  height: auto;
+  overflow: visible;
+  position: static;
+  white-space: normal;
+  width: auto;
+}
+
+///
+/// Target focus state for keyboard users
+///
+/// @example
+///   .button {
+///     @include keyboard-focus {
+///       color: red;
+///     }
+///   }
+///
+/// @require {variable} $keyboard-focus-class Class name added by js on tab
+///
+@mixin keyboard-focus {
+
+  .#{$keyboard-focus-class} &:focus {
+    @content
+  }
+}

@@ -1,0 +1,38 @@
+// ----
+// Text, background, fill, and stroke color classes
+//
+// See $color-styles in 01-Settings/_vars.colors.scss
+// ----
+
+@each $name, $value in $color-styles {
+  .u-c-#{$name} {
+    color: $value;
+  }
+
+  .u-bg-#{$name} {
+    background-color: $value;
+  }
+
+  .u-svg-#{$name} {
+    svg {
+      fill: transparent;
+      stroke: transparent;
+
+      .u-fill {
+        fill: $value;
+      }
+
+      .u-stroke {
+        stroke: $value;
+      }
+    }
+  }
+
+  .u-fill-#{$name} {
+    fill: $value;
+  }
+
+  .u-stroke-#{$name} {
+    stroke: $value;
+  }
+}

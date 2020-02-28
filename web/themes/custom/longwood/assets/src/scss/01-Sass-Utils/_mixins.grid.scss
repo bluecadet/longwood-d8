@@ -1,0 +1,158 @@
+////
+/// Grid Mixins
+/// @group Mixins
+/// @author Bluecadet
+////
+
+
+/// ------------------
+/// Flexgrid Container
+///
+/// Creates a basic container element
+///
+/// @param {width} $w The width of the container
+/// @param {boolean} $fluid [false] If the container is fluid or adaptive
+/// ------------------
+
+@mixin flexContainer($w, $fluid: false) {
+  width: $w;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-max-width;
+
+  @if $fluid == true {
+    padding-right: $grid-outer-margin-start;
+    padding-left: $grid-outer-margin-start;
+
+    @each $margin in $grid-outer-margin-breakpoints {
+      $bp: nth($margin, 1);
+      $pad: nth($margin, 2);
+
+      @media only screen and (min-width: $bp) {
+        padding-right: $pad;
+        padding-left: $pad;
+      }
+    }
+  }
+}
+
+/// ---------------------
+/// Flexgrid Row Defaults
+///
+/// The basic settings for a row element. Change as needed by project.
+///
+/// @param $direction [row] `flex-direction` value
+/// ---------------------
+@mixin flexRow($direction: row) {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+  margin-right: $gutter-compensation;
+  margin-left: $gutter-compensation;
+  @include flexRowModifiers;
+}
+
+// =================
+// Grid calculations
+// =================
+
+/// -------------
+/// flexColCommon
+///
+/// Common to all Flexgrid Columns
+/// -------------
+@mixin flexColCommon {
+  flex: 0 0 auto;
+  padding-right: $half-gutter-width;
+  padding-left: $half-gutter-width;
+}
+
+/// ---------------------------------
+/// Flexgrid column width calculation
+/// ---------------------------------
+@mixin flexCol($i) {
+  flex-basis: (100% / $grid-columns * $i);
+  max-width: (100% / $grid-columns * $i);
+}
+
+/// -----------------
+/// Full width column
+/// -----------------
+@mixin flexColFull {
+  @include flexColCommon;
+  width: 100%;
+  flex-basis: auto;
+}
+
+/// -----------------
+/// Auto-width column
+/// -----------------
+@mixin flexColAuto {
+  flex: 1;
+  width: auto;
+  padding-right: $half-gutter-width;
+  padding-left: $half-gutter-width;
+}
+
+
+/// ------------------
+/// Flex column offset
+///
+/// Flexgrid column offset calculation
+///
+/// @param {int} $i Number of columns to calculate for
+/// ------------------
+@mixin flexColOffset($i) {
+  margin-left: (100% / $grid-columns * $i);
+}
+
+/// -------------------------
+/// Flex Row Modifier Classes
+///
+/// Modifier elements that will be added to row classes. Change as needed by project.
+/// -------------------------
+@mixin flexRowModifiers {
+  &--normal {
+    flex-direction: row;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &--start {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  &--center {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &--end {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  &--top {
+    align-items: flex-start;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--bottom {
+    align-items: flex-end;
+  }
+
+  &--around {
+    justify-content: space-around;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+}

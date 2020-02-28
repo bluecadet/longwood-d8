@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Styleguide -->
+    <link media="all" rel="stylesheet" href="{{ path ~ '/css/app.css' }}">
+
+    <!-- Fractal Only -->
+    <link media="all" rel="stylesheet" href="{{ path ~ '/css/fractal.css' }}">
+
+    <title>{{ _target.label }} | Styleguide</title>
+  </head>
+  <body>
+
+    {{ yield }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="{{ path ~ '/js/fractal-app.js' }}"></script>
+    <script src="{{ path ~ '/js/fractal.js' }}"></script>
+  </body>
+
+</html>

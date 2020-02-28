@@ -1,0 +1,31 @@
+// ----
+// Colors
+//
+// Prefix color variables as `$c-name`
+//
+// Color variants should start with color, then vairant:
+//   Good example: `$c-blue-light`
+//   Bad example:  `$c-light-blue`
+//
+// ----
+
+$c-white: #ffffff;
+$c-black: #111111;
+
+$c-gray-dark: #757679;
+$c-gray-light: #d0dbe2;
+$c-gray-blue: #7c98b1;
+
+// ----
+// Color list for utility classes
+//
+// See `06-Utilities/utils.colors.scss
+//
+// Array format: 'class-base': $color-var, where `class-base` would output as
+// both `.u-c-[class-base]` and `.u-bg-[class-base]`
+// ----
+
+$color-styles: (
+  'white': $c-white,
+  'black': $c-black
+);

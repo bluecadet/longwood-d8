@@ -1,0 +1,13 @@
+{% if use_li == true %}
+  <li>
+{% else %}
+  <div>
+{% endif %}
+
+  ({{ data.number }}). This is a child component
+
+{% if use_li == true %}
+  </li>
+{% else %}
+  </div>
+{% endif %}

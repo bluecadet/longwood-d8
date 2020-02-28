@@ -1,0 +1,20 @@
+<div class="frctl-section">
+  {% for class in classes %}
+    <div class="frctl-section__entry">
+      <h2 class="{{ class }}">{{ text }}</h2>
+      <span>
+        <code class="fractal-code">class="{{ class }}"</code>
+        <code class="fractal-code fractal-type-size">font-size: <span class="fractal-insert-fontsize"></span></code>
+      </span>
+    </div>
+  {% endfor %}
+  <div class="frctl-section__entry">
+    <strong><em>See notes on styling header tags</em></strong>
+    <h1>{{ text }} <code class="fractal-code">tag: h1</code></h1>
+    <h2>{{ text }} <code class="fractal-code">tag: h2</code></h2>
+    <h3>{{ text }} <code class="fractal-code">tag: h3</code></h3>
+    <h4>{{ text }} <code class="fractal-code">tag: h4</code></h4>
+    <h5>{{ text }} <code class="fractal-code">tag: h5</code></h5>
+    <h6>{{ text }} <code class="fractal-code">tag: h6</code></h6>
+  </div>
+</div>

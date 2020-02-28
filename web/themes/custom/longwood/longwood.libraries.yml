@@ -1,0 +1,17 @@
+global-css:
+  version: 1.0
+  css:
+    theme:
+      assets/dist/css/app.css: {}
+global-js:
+  version: 1.0
+  js:
+    assets/dist/dependencies/blazy.min.js: { weight: -9 }
+    assets/dist/js/app.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.draggable
+    - core/drupal
+    - core/underscore
+    - core/drupalSettings

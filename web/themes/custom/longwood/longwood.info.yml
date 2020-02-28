@@ -1,0 +1,38 @@
+name: Longwood
+type: theme
+description: A theme for Drupal 8
+base theme: stable
+
+libraries:
+  - longwood/global-css
+  - longwood/global-js
+
+regions:
+  header: 'Header'
+  page_top: 'Page Top'
+  page_bottom: 'Page Bottom'
+  breadcrumb: 'Breadcrumb'
+  admin_tabs: 'Admin Tabs'
+  messages: 'Admin Messages'
+  content: 'Content'
+  promo_footer: 'Promo Footer'
+  footer: 'Footer'
+  sub_footer: 'Sub-Footer'
+
+ckeditor_stylesheets:
+  - assets/dist/css/editor.css
+
+component-libraries:
+  fractal:
+    paths:
+      - fractal/patterns
+
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'Bluecadet'
+
+
+dependencies:
+  - bluecadet_utilities
+  - components

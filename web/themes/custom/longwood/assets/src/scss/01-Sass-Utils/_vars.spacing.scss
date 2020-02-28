@@ -1,0 +1,39 @@
+////
+/// Spacing Variables
+///
+/// Spacing values based on an 8pt grid
+///
+/// @link https://spec.fm/specifics/8-pt-grid
+/// @group Variables
+/// @author Bluecadet
+////
+
+$spacing: 0.8rem;
+
+$space-xxxs: $spacing * 0.5; // 0.4rem
+$space-xxs: $spacing * 1; // 0.8rem
+$space-xs: $spacing * 1.5; // 1.2rem
+$space-s: $spacing * 2; // 1.6rem
+$space-m: $spacing * 3; // 2.4rem
+$space-l: $spacing * 4; // 3.2rem
+$space-xl: $spacing * 6; // 4.8rem
+$space-xxl: $spacing * 9; // 7.2rem
+$space-xxxl: $spacing * 16; // 12.8rem
+
+/// --------------------------------
+/// Spacing list for utility classes
+///
+/// See `08-Utilities/utils.spacing.scss
+/// Array format: 'class-base': $spacing-var
+/// --------------------------------
+$spaces: (
+  xxxs: $space-xxxs,
+  xxs: $space-xxs,
+  xs: $space-xs,
+  s: $space-s,
+  m: $space-m,
+  l: $space-l,
+  xl: $space-xl,
+  xxl: $space-xxl,
+  xxxl: $space-xxxl,
+);

@@ -1,0 +1,46 @@
+.u-sr-only,
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.u-align {
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-left {
+    text-align: left;
+  }
+}
+
+.u-text {
+  &-italic {
+    font-style: italic;
+  }
+
+  &-medium {
+    font-weight: $f-medium;
+  }
+
+  &-bold {
+    font-weight: $f-bold;
+  }
+
+  &-black {
+    font-weight: $f-black;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.u-list-inline {
+  li {
+    display: inline-block;
+  }
+}

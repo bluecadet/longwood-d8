@@ -1,0 +1,219 @@
+.webform-submission-form {
+  max-width: 65rem;
+  margin: 0 auto $space-xxl;
+}
+
+.js-form-item {
+  margin-bottom: $space-m;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: 1.8rem;
+    font-weight: $f-medium;
+  }
+
+  .webform-element-help {
+    background-color: $c-blue-med;
+    border-color: $c-blue-med;
+  }
+
+  .webform-element-description {
+    font-size: 1.8rem;
+    margin-top: $space-xxxs;
+  }
+
+  .webform-element-more {
+    margin-top: $space-xxxs;
+  }
+
+  .webform-element-more--link {
+    font-size: 1.8rem;
+    font-weight: $f-bold;
+
+    &:before {
+      font-size: 0.6rem;
+      vertical-align: middle;
+      margin-right: $space-xxxs;
+    }
+  }
+
+  .webform-element-more--content {
+    font-size: 1.8rem;
+    margin-left: $space-s;
+  }
+}
+
+.ui-tooltip {
+  padding: $space-xs $space-s $space-s;
+  border: none !important;
+  box-shadow: 0 0.5rem 1rem rgba($c-black, 0.2);
+
+  .webform-element-help--title,
+  .webform-element-help--content {
+    font-family: $f-sans;
+    color: $c-blue-dark;
+  }
+
+  .webform-element-help--title {
+    font-size: 2.3rem;
+  }
+
+  .webform-element-help--content {
+    font-size: 1.6rem;
+  }
+}
+
+.js-form-type-checkbox {
+  input {
+    vertical-align: middle;
+  }
+}
+
+.form-textarea,
+.form-text,
+.form-select {
+  width: 100%;
+  border: 0.1rem solid $c-gray-light;
+  margin-top: $space-xxxs;
+  color: $c-blue-dark;
+  padding: $space-xs;
+  font-family: $f-sans;
+}
+
+.form-textarea {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.form-text {
+  height: 6rem;
+  font-size: 2.3rem;
+  line-height: 6rem;
+}
+
+.js-form-type-select select {
+  margin-top: $space-xxxs;
+  height: 6rem;
+}
+
+.form-select,
+.ui-datepicker-title select {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: $f-bold;
+  color: $c-gray-blue;
+  line-height: 1.3;
+  padding: $space-s 1.6rem $space-s $space-xs;
+  max-width: 100%;
+  height: 6rem;
+  margin: 0;
+  border-radius: 0;
+  appearance: none;
+  background-color: $c-white;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23003865%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, $c-white 0%, $c-white 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  transition: all 200ms $easeInOutCubic;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:hover {
+    border-color: $c-blue-med;
+  }
+
+  &:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: $c-blue-dark;
+    outline: none;
+  }
+
+  & option {
+    font-weight: normal;
+  }
+}
+
+.webform-button--submit {
+  @include button_base;
+  font-family: $f-sans;
+  background-color: $c-orange;
+  color: $c-white;
+  border: none;
+  margin-top: $space-m;
+
+  &:hover {
+    background-color: lighten($c-orange, 5%);
+    transition: all 300ms $easeInOutCubic;
+  }
+}
+
+.ui-datepicker {
+  background-color: $c-white;
+  border: none !important;
+  font-family: $f-sans;
+  color: $c-blue-dark;
+  box-shadow: 0 0.5rem 2rem rgba($c-black, 0.2);
+}
+
+.ui-widget-header {
+  background-color: $c-blue-light;
+  border: none;
+}
+
+.ui-datepicker-title {
+  display: flex;
+  justify-content: space-evenly;
+
+  select {
+    font-family: $f-sans;
+    display: inline-block;
+    padding: $space-xs 1.2rem $space-xs $space-xs;
+    font-size: 1.6rem !important;
+    color: $c-blue-dark;
+  }
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  top: 8px;
+
+  &:hover {
+    background: $c-blue-light;
+    border: none;
+  }
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  background: $c-blue-light;
+  border: none;
+  color: $c-blue-dark;
+
+  &:hover {
+    color: $c-blue-med;
+    background: lighten($c-blue-light, 1%);
+  }
+}
+
+.ui-datepicker-today .ui-state-default {
+  background: $c-blue-med;
+  color: $c-white;
+  font-weight: $f-bold;
+
+  &:hover {
+    color: $c-white;
+    background: lighten($c-blue-med, 5%);
+  }
+}

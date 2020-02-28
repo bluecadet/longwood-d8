@@ -1,0 +1,14 @@
+<div class="frctl-section">
+  <div class="frctl-section__entry">
+    <p><strong>Lorem ipsum dolor sit amet,</strong> <i>consectetuer adipiscing elit.</i> <strike>Donec odio.</strike> Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+    <span><code class="fractal-code">Basic &lt;p&gt; tag</code></span>
+  </div>
+
+  {% for class in classes %}
+    <div class="frctl-section__entry">
+      <h2 class="{{ class }}">{{ text }}</h2>
+      <span><code class="fractal-code">class="{{ class }}"</code></span>
+    </div>
+  {% endfor %}
+</div>
