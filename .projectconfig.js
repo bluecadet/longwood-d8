@@ -1,13 +1,13 @@
 // Path Definitions
-const BASE_THEME    = 'longwood';
-const THEMES_PATH   = `web/themes/custom/`;
-const MODULES_PATH  = 'web/modules/custom/';
+const BASE_THEME = 'longwood';
+const THEMES_PATH = 'web/themes/custom/';
+const MODULES_PATH = 'web/modules/custom/';
 const DEST_DIR_PATH = 'assets/dist';
-const SRC_DIR_PATH  = 'assets/src';
+const SRC_DIR_PATH = 'assets/src';
 
 // Fractal Definitions
-const USE_FRACTAL   = true;
-const FRACTAL_PATH  = THEMES_PATH + BASE_THEME + '/fractal';
+const USE_FRACTAL = true;
+const FRACTAL_PATH = THEMES_PATH + BASE_THEME + '/fractal';
 
 // Favivon Data
 const FAVICON_DATA = false; // Replace with an array of objects from https://realfavicongenerator.net
@@ -30,18 +30,18 @@ module.exports = {
   },
   paths: {
     js: {
-      main:    SRC_DIR_PATH + '/js/*.js',
-      watch:   SRC_DIR_PATH + '/js/**/*.js',
-      dest:   DEST_DIR_PATH + '/js/'
+      main: SRC_DIR_PATH + '/js/*.js',
+      watch: SRC_DIR_PATH + '/js/**/*.js',
+      dest: DEST_DIR_PATH + '/js/'
     },
     sass: {
-      main:    SRC_DIR_PATH + '/scss/*.scss',
-      watch:   SRC_DIR_PATH + '/scss/**/*.scss',
-      dest:   DEST_DIR_PATH + '/css/',
+      main: SRC_DIR_PATH + '/scss/*.scss',
+      watch: SRC_DIR_PATH + '/scss/**/*.scss',
+      dest: DEST_DIR_PATH + '/css/',
     },
     images: {
-      main:    SRC_DIR_PATH + '/images/**/*',
-      dest:   DEST_DIR_PATH + '/images/'
+      main: SRC_DIR_PATH + '/images/**/*',
+      dest: DEST_DIR_PATH + '/images/'
     },
     watch_files: [
       '**/*.php',
@@ -64,7 +64,7 @@ module.exports = {
     {
       "label": "Home page",
       "path": "",
-        "wptOptIn": true
+      "wptOptIn": true
     },
   ]
 }

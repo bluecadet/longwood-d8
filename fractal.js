@@ -1,7 +1,7 @@
 'use strict';
 
 const themeDir = 'longwood';
-const baseThemePath = `eb/themes/custom/${themeDir}/`;
+const baseThemePath = `web/themes/custom/${themeDir}/`;
 const distPath = `${baseThemePath}/assets/dist/`;
 const libPath = `${baseThemePath}/fractal/`;
 
@@ -37,7 +37,7 @@ fractal.components.set(
 fractal.components.engine(twigAdapter);
 fractal.components.set('ext', '.twig');
 
-// Statues
+// Statuses
 fractal.components.set('statuses', {
   proto: {
     label: 'Prototype',

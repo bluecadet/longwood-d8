@@ -350,7 +350,7 @@ gulp.task(
 // ------------
 
 gulp.task('watch', () => {
-  Object.keys(watch_manifest).forEach(function(task) {
+  Object.keys(watch_manifest).forEach(function (task) {
     const manifest = watch_manifest[task];
     gulp.watch(manifest.sass, gulp.series('sass:' + task));
     gulp.watch(manifest.js, gulp.series('js:' + task, reload));
@@ -407,7 +407,7 @@ gulp.task(
 //
 // Generate Icons
 //
-gulp.task('favicon:generate', function(done) {
+gulp.task('favicon:generate', function (done) {
   if (CONFIG.faviconData) {
     let funcsCount = CONFIG.faviconData.length;
     CONFIG.faviconData.forEach(element => {
@@ -427,7 +427,7 @@ gulp.task('favicon:generate', function(done) {
 //
 // Generate Icon HTML
 //
-gulp.task('favicon:markup', function(done) {
+gulp.task('favicon:markup', function (done) {
   if (CONFIG.faviconData) {
     CONFIG.faviconData.forEach(element => {
       gulp
@@ -490,7 +490,7 @@ if (CONFIG.fractal.use) {
 //
 // Init Fractal Browsersync Server
 //
-gulp.task('startsync:fractal', function(done) {
+gulp.task('startsync:fractal', function (done) {
   if (!CONFIG.fractal.use) {
     return done();
   }
@@ -517,7 +517,7 @@ gulp.task(
 //
 // Build Fractal
 //
-gulp.task('fractal:build', function(done) {
+gulp.task('fractal:build', function (done) {
   if (CONFIG.fractal.use) {
     const builder = fractal.web.builder();
     builder.on('progress', (completed, total) =>
@@ -531,7 +531,7 @@ gulp.task('fractal:build', function(done) {
 });
 
 // Copy Fractal Build to Netlify Branch
-gulp.task('fractal:build:branch', function(done) {
+gulp.task('fractal:build:branch', function (done) {
   if (CONFIG.fractal.use) {
     return gulp.src('./fractal-build/**/*').pipe(
       ghPages({
