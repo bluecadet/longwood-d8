@@ -1,0 +1,11 @@
+{
+  "db_name": "longwoodd8",
+  "db_user": "root",
+  "db_pass": "root",
+  "db_prefix": "",
+  "db_host": "localhost",
+  "db_port": "3306",
+  "format": "Drupal 8: Circle CI",
+  "bac_exp": 60,
+  "file_path": "/web/sites/default/files"
+}
