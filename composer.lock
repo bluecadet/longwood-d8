@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98952254de957fdff955384dead71c06",
+    "content-hash": "c14cae62feb99eebc253a485dda14d2a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -152,6 +152,41 @@
             ],
             "description": "Import Initial Field config from CSV",
             "time": "2020-01-07T16:54:40+00:00"
+        },
+        {
+            "name": "bluecadet/bc_api_base",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluecadet/bc_api_base.git",
+                "reference": "e5a132ea3a231212b996076229fb7416eb0783db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluecadet/bc_api_base/zipball/e5a132ea3a231212b996076229fb7416eb0783db",
+                "reference": "e5a132ea3a231212b996076229fb7416eb0783db",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0@dev",
+                "drupal/key_auth": "^1.0",
+                "oomphinc/composer-installers-extender": "~1.0",
+                "php": "^7.0"
+            },
+            "type": "custom-drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pete Inge",
+                    "email": "pete.inge@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Base layer for all API implementations.",
+            "time": "2020-03-04T20:21:31+00:00"
         },
         {
             "name": "bluecadet/bluecadet_config_suite",
@@ -3869,6 +3904,53 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "https://git.drupalcode.org/project/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/key_auth",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/key_auth.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/key_auth-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "dfc746fb70716780c67e85be33e2c91a1d20fc60"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1524056284",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mstef",
+                    "homepage": "https://www.drupal.org/user/107190"
+                }
+            ],
+            "description": "Provides an authentication provider based on per-user API keys.",
+            "homepage": "https://www.drupal.org/project/key_auth",
+            "support": {
+                "source": "https://git.drupalcode.org/project/key_auth"
             }
         },
         {

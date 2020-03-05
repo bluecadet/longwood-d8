@@ -12,6 +12,7 @@
     "require": {
         "php": ">=7.0.8",
         "bluecadet/bc_aicc": "^1.0",
+        "bluecadet/bc_api_base": "^1.1",
         "bluecadet/bluecadet_config_suite": "^1.1",
         "bluecadet/bluecadet_gcse": "^1.0",
         "bluecadet/bluecadet_redirect_importer": "^1.0",
