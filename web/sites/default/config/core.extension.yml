@@ -1,10 +1,12 @@
 module:
   new_relic_rpm: -20
   admin_toolbar: 0
+  admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
   allowed_formats: 0
   automated_cron: 0
   bc_aicc: 0
+  bc_api_base: 0
   block: 0
   block_content: 0
   bluecadet_config_suite: 0
@@ -51,6 +53,7 @@ module:
   image: 0
   image_effects: 0
   inline_entity_form: 0
+  key_auth: 0
   kint: 0
   link: 0
   linkit: 0
