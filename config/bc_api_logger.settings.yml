@@ -1,0 +1,6 @@
+row_limit: 100000
+dependencies:
+  module:
+    - bc_api_logger
+_core:
+  default_config_hash: LKNdwQ2LqQ_4qeqO_BeYkLssYIG4He1oYE9-truBkb4
