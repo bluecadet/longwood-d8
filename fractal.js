@@ -68,7 +68,7 @@ fractal.docs.set('path', path.join(__dirname, `${libPath}`, 'docs'));
  */
 fractal.web.set('static.path', path.join(__dirname, `${distPath}`));
 
-fractal.web.set('builder.dest', 'fractal-build');
+fractal.web.set('builder.dest', 'web/styleguide');
 
 /**
  * Custom Fractal Theme
