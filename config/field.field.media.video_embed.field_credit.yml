@@ -1,0 +1,30 @@
+uuid: 2b20dc5c-49f9-4c0a-b246-32396db0e28e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_credit
+    - media.type.video_embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: h8M7Yts3wgv9bdooQFfKwIpATdj8USzyeF87bG0QVWc
+id: media.video_embed.field_credit
+field_name: field_credit
+entity_type: media
+bundle: video_embed
+label: Credit
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

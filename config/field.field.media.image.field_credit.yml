@@ -1,0 +1,23 @@
+uuid: a5f69ffa-6692-46c8-909a-ef679841ad8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_credit
+    - media.type.image
+  module:
+    - text
+_core:
+  default_config_hash: EC2wQAOqYrKtb1q75DAyg1X0I6XpppC_PIPH2f4h_DE
+id: media.image.field_credit
+field_name: field_credit
+entity_type: media
+bundle: image
+label: Credit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

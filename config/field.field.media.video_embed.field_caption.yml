@@ -1,0 +1,30 @@
+uuid: 1ca8d12a-bd94-4052-ba8f-c3fcbb79f4c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_caption
+    - media.type.video_embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: zISgyxcLy2qhVo4muFPJtM6fu4eq3wnm5DIz1zjlRps
+id: media.video_embed.field_caption
+field_name: field_caption
+entity_type: media
+bundle: video_embed
+label: Caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

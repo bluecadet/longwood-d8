@@ -1,0 +1,12 @@
+uuid: 3737aab7-c789-4622-a7bd-4275b0d08ac7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: qXqdQXWUP-TxOSor3tsbSIi3iYyxNftzJCFPyU15JEU
+id: media.wysiwyg_full
+label: 'WYSIWYG Full'
+targetEntityType: media
+cache: true

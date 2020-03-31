@@ -2,12 +2,15 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
+  allowed_formats: 0
   automated_cron: 0
   bc_api_base: 0
   bc_api_logger: 0
   big_pipe: 0
   block: 0
   block_content: 0
+  bluecadet_config_suite: 0
+  bluecadet_media_fields: 0
   bluecadet_redirect_importer: 0
   bluecadet_social_links: 0
   bluecadet_text_formats: 0
@@ -18,19 +21,28 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  crop: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity_browser: 0
+  entity_browser_entity_form: 0
+  entity_embed: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  focal_point: 0
   help: 0
   history: 0
   image: 0
+  inline_entity_form: 0
   key_auth: 0
   link: 0
+  media: 0
+  media_entity_browser: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -48,6 +60,8 @@ module:
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
+  video_embed_media: 0
   views_ui: 0
   menu_link_content: 1
   views: 10

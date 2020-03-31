@@ -1,0 +1,12 @@
+uuid: 257edde2-f166-499b-b238-da015a7dff86
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: RH02KwEwqEWkZplSI5kBf8N0YguqvemaLJXVGZpah6A
+id: media.inline_entity_form
+label: 'Inline Entity Form'
+targetEntityType: media
+cache: true

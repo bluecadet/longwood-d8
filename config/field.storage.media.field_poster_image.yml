@@ -1,0 +1,32 @@
+uuid: e5deb6c5-cc58-43c3-b154-099ec5e6653a
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - media
+_core:
+  default_config_hash: POuszFfdBH0oZtn-dB_D41rlNtruUsVXKnUMcLoQE34
+id: media.field_poster_image
+field_name: field_poster_image
+entity_type: media
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,52 @@
+uuid: 46bab1d2-238b-43e6-b207-06cfdffe6ef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: local_image_video_browser
+label: 'Local Image/Video Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select image or videos'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6db52d1a-4fd4-49c4-a6cd-d0337b713de5:
+    settings:
+      view: media_entity_browser
+      view_display: local_image_video_entity_browser
+      submit_text: 'Select Videos'
+      auto_select: false
+    uuid: 6db52d1a-4fd4-49c4-a6cd-d0337b713de5
+    weight: 1
+    label: 'View Media'
+    id: view
+  944bfcd1-4d4d-4ace-8ea7-46235a61df48:
+    settings:
+      entity_type: media
+      bundle: image
+      form_mode: inline_entity_form
+      submit_text: 'Save Image'
+    uuid: 944bfcd1-4d4d-4ace-8ea7-46235a61df48
+    weight: 2
+    label: 'Upload Image'
+    id: entity_form
+  2a2ec304-3cf9-45a5-8bb4-2d38a8461c1e:
+    settings:
+      entity_type: media
+      bundle: video
+      form_mode: inline_entity_form
+      submit_text: 'Save Video'
+    uuid: 2a2ec304-3cf9-45a5-8bb4-2d38a8461c1e
+    weight: 3
+    label: 'Upload Local Video'
+    id: entity_form

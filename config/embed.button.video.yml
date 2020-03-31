@@ -1,0 +1,28 @@
+uuid: 97843430-8e8a-44e6-ae5f-c353aa23c8e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wysiwyg_full
+    - media.type.video
+    - media.type.video_embed
+  module:
+    - entity_embed
+    - media
+_core:
+  default_config_hash: chTYhr_mor_D5uUnkXYOsReMvjvrSxAsB6uLEm-V9zM
+label: Video
+id: video
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - video
+    - video_embed
+  display_plugins:
+    - 'view_mode:media.wysiwyg_full'
+  entity_browser: wy_video_browser
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_uuid: null

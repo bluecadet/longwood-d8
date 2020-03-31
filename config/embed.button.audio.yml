@@ -1,0 +1,26 @@
+uuid: c5d20efe-5385-4c61-96bb-8ed8ef93ba30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wysiwyg_full
+    - media.type.audio
+  module:
+    - entity_embed
+    - media
+_core:
+  default_config_hash: z6iQlgFB-ZtfkCDQxyxOAgy0CPKiGo89XOJNZjGr9f8
+label: Audio
+id: audio
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - audio
+  display_plugins:
+    - 'view_mode:media.wysiwyg_full'
+  entity_browser: wy_audio_browser
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_uuid: null

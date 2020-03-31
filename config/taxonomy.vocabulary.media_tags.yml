@@ -1,0 +1,10 @@
+uuid: 7af80f28-3754-4a93-a377-d0b6015b6cab
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: E90ZOdXwOUOhasRfDLL579P7zqIsWN_EuCp-Zy7gkPc
+name: 'Media Tags'
+vid: media_tags
+description: 'Tag your media to find it later on.'
+weight: 0

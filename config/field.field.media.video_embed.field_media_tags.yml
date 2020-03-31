@@ -1,0 +1,31 @@
+uuid: 9d34cb2f-0f3e-465b-8d84-22614725d102
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_tags
+    - media.type.video_embed
+    - taxonomy.vocabulary.media_tags
+_core:
+  default_config_hash: 0rL9eQmwWNSsejnNbg9k3IXdfoysq0KX5wTIbZcrjP0
+id: media.video_embed.field_media_tags
+field_name: field_media_tags
+entity_type: media
+bundle: video_embed
+label: 'Media Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      media_tags: media_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,42 @@
+uuid: 84d10b66-3cec-46d8-8cd5-f05b9f30bd02
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: file_browser
+label: 'File Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select files'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  0b5902b1-2a36-495a-baed-6061d8c1f94a:
+    settings:
+      view: media_entity_browser
+      view_display: files_entity_browser
+      submit_text: 'Select Files'
+      auto_select: false
+    uuid: 0b5902b1-2a36-495a-baed-6061d8c1f94a
+    weight: 1
+    label: 'View Field'
+    id: view
+  0311842f-5e1a-4b88-9718-fa1a4d0b6fef:
+    settings:
+      entity_type: media
+      bundle: file
+      form_mode: inline_entity_form
+      submit_text: 'Save File'
+    uuid: 0311842f-5e1a-4b88-9718-fa1a4d0b6fef
+    weight: 2
+    label: 'Upload File'
+    id: entity_form

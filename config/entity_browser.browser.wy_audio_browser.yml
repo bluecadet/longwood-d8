@@ -1,0 +1,42 @@
+uuid: ca8fdf4b-df73-4652-96bd-cbc851f71f72
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: wy_audio_browser
+label: 'WYSIWYG Audio Browser'
+display: modal
+display_configuration:
+  width: 100%
+  height: '768'
+  link_text: 'Select Audio'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  48d2751e-aa3e-4f59-870f-6252a535f49d:
+    settings:
+      view: media_entity_browser
+      view_display: audio_entity_browser
+      submit_text: 'Select Audio'
+      auto_select: false
+    uuid: 48d2751e-aa3e-4f59-870f-6252a535f49d
+    weight: 1
+    label: 'View Field'
+    id: view
+  b107a0d8-4b93-4f33-8ec7-9908b4c0816e:
+    settings:
+      entity_type: media
+      bundle: audio
+      form_mode: inline_entity_form
+      submit_text: 'Save Audio'
+    uuid: b107a0d8-4b93-4f33-8ec7-9908b4c0816e
+    weight: 2
+    label: 'Upload Audio'
+    id: entity_form

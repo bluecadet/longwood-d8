@@ -1,0 +1,12 @@
+uuid: e818183f-3a34-4042-b193-89b52384e202
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 0RLew--uYROtP-F9t5LJNBoa0DfxEV5yX4UJ_AX38QU
+id: media.wysiwyg_left
+label: 'WYSIWYG Left'
+targetEntityType: media
+cache: true

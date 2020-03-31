@@ -1,0 +1,30 @@
+uuid: fc1050a9-bfc7-464a-bf30-0fa58e8bebc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_credit
+    - media.type.audio
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: 34ICSPgrBxM3nCa6VDIIQqQpCgmZXUTdhE6rwh0OSOw
+id: media.audio.field_credit
+field_name: field_credit
+entity_type: media
+bundle: audio
+label: Credit
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

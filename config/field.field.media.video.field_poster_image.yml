@@ -1,0 +1,40 @@
+uuid: b421def7-7f7c-48bc-b59e-bf95646c69a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_poster_image
+    - media.type.video
+  module:
+    - image
+_core:
+  default_config_hash: xZwFr8bUsuRvTqeMKC2rIk_ubIKQu527lj59xJeIetM
+id: media.video.field_poster_image
+field_name: field_poster_image
+entity_type: media
+bundle: video
+label: 'Poster Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'poster-imgs/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

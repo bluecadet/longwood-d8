@@ -1,0 +1,23 @@
+uuid: 585d7ddc-ceb0-4129-bdcb-65eb17acbdf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_credit
+    - media.type.video
+  module:
+    - text
+_core:
+  default_config_hash: cRzpmdTam-l08G6sEV27xa06qnN1s3rQ-BZL1BiTAiA
+id: media.video.field_credit
+field_name: field_credit
+entity_type: media
+bundle: video
+label: Credit
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
