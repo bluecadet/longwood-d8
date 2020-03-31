@@ -1,0 +1,29 @@
+uuid: d370c024-b32d-40c7-8212-b749ba058e42
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3cZ_HwFGFmlTRLxSkng-ovn4VJCTAdku-phgKbVTM3k
+name: 'Plain Text Formatter'
+format: plain_text_formatter
+weight: -9
+filters:
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }

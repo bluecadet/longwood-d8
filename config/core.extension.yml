@@ -8,6 +8,10 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  bluecadet_redirect_importer: 0
+  bluecadet_social_links: 0
+  bluecadet_text_formats: 0
+  bluecadet_utilities: 0
   breakpoint: 0
   ckeditor: 0
   color: 0

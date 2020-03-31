@@ -1,0 +1,21 @@
+uuid: 62383db8-30aa-4fb1-9688-d8e02b6128a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: rXdud8bslf6kltu-Ve-4lmINzsfdYJwBorpVMaDByS0
+id: block_content.field_s_facebook
+field_name: field_s_facebook
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

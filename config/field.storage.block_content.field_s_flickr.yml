@@ -1,0 +1,21 @@
+uuid: d2b48f4f-f468-4d0f-9f77-ee4d381951ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: aNo3XYq7_x4k0bcRBApWANtQGJ4jg1OydN8pJmrYa0Y
+id: block_content.field_s_flickr
+field_name: field_s_flickr
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

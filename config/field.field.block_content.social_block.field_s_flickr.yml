@@ -1,0 +1,25 @@
+uuid: 52b4da5e-4c1e-4289-8082-71ba04cfb9ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_block
+    - field.storage.block_content.field_s_flickr
+  module:
+    - link
+_core:
+  default_config_hash: mRJD3iF3yStExzDY0mxsHi0LXBICmi-S0K6e4wAwaiI
+id: block_content.social_block.field_s_flickr
+field_name: field_s_flickr
+entity_type: block_content
+bundle: social_block
+label: Flickr
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

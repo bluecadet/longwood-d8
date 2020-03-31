@@ -1,0 +1,25 @@
+uuid: f410b2dd-f451-4cf1-84a5-5234f95f513e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_block
+    - field.storage.block_content.field_s_twitter
+  module:
+    - link
+_core:
+  default_config_hash: fJFnNFdD_Ko5RCaCIBD8iNGBxi35URjKwi0VH8HD39E
+id: block_content.social_block.field_s_twitter
+field_name: field_s_twitter
+entity_type: block_content
+bundle: social_block
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

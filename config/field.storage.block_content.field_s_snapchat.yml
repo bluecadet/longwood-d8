@@ -1,0 +1,21 @@
+uuid: bf6426b0-2a4f-40db-9448-2bd8e55a4e0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: Vx2OT9tl8cqQIetT0cehTwcYT-pM2WdZiI2_nx9la5Y
+id: block_content.field_s_snapchat
+field_name: field_s_snapchat
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: e5e20baa-a00b-4312-a634-0004ed1d043e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_block
+    - field.storage.block_content.field_s_snapchat
+  module:
+    - link
+_core:
+  default_config_hash: VuI4Z-wdHsp8W3vqbSDp3203zPJBRhmWN1-Jgv27WTk
+id: block_content.social_block.field_s_snapchat
+field_name: field_s_snapchat
+entity_type: block_content
+bundle: social_block
+label: Snapchat
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,10 @@
+uuid: d0efce1b-3618-4ce0-a068-c8544398415c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: a4HT7tDWl8vj3qQCkpovRRXi3y_Qy730JNQNOeyDhVo
+name: 'Embed Code'
+format: embed_code
+weight: 0
+filters: {  }

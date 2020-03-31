@@ -1,0 +1,25 @@
+uuid: e4d2362e-dd32-4eac-b31a-075ecddf626c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_block
+    - field.storage.block_content.field_s_facebook
+  module:
+    - link
+_core:
+  default_config_hash: R_lQpChee_oFNqaAisVDfc_OWNa9CnIs_ho_PkUY5qc
+id: block_content.social_block.field_s_facebook
+field_name: field_s_facebook
+entity_type: block_content
+bundle: social_block
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

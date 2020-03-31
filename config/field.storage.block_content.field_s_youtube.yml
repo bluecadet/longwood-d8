@@ -1,0 +1,21 @@
+uuid: 6ad4a36c-6967-431f-a871-5383dd7341d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: GE11og2e-_rV5MJqcqPUQnqJVhJrOwz1ljAphzu0a1s
+id: block_content.field_s_youtube
+field_name: field_s_youtube
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
