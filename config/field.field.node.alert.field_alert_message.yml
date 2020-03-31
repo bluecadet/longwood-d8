@@ -1,0 +1,23 @@
+uuid: 2d3928d1-77fb-437d-91fe-9c3735539b76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alert_message
+    - node.type.alert
+  module:
+    - text
+_core:
+  default_config_hash: Zz9mayUY9Gs__PmRabfhCnt_LQztYcD2LfOVXROXDCU
+id: node.alert.field_alert_message
+field_name: field_alert_message
+entity_type: node
+bundle: alert
+label: 'Alert Message'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

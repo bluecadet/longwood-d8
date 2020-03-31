@@ -1,0 +1,22 @@
+uuid: 14e49e63-7566-48a3-96a2-ad88d8735e75
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.alert.field_alert_message
+    - node.type.alert
+  module:
+    - user
+_core:
+  default_config_hash: 6cO4Vol_QYeu4rGA7C584e14wTj_5SQWoMrPrnCwPQI
+id: node.alert.teaser
+targetEntityType: node
+bundle: alert
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_alert_message: true

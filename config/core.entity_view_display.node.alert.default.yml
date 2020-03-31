@@ -1,0 +1,26 @@
+uuid: 71091a2b-4096-4d95-9f8a-e1d8f9763b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.alert.field_alert_message
+    - node.type.alert
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: r9UBk0-_qf6QUBYSkdhg8VPX0-v-PpT5woFo0zEB2lI
+id: node.alert.default
+targetEntityType: node
+bundle: alert
+mode: default
+content:
+  field_alert_message:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,20 @@
+uuid: 7dd531b0-418e-4e43-993b-88616a2a515a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: uW6RXmYSmJ4mToPfggKDi0-sw1mGc-NmvoKkKxhfEzk
+name: Alert
+type: alert
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true
