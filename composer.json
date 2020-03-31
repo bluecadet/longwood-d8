@@ -76,6 +76,7 @@
         "drupal/views_ajax_history": "^1.2",
         "drupal/viewsreference": "^1.4",
         "drupal/webform": "^5.8",
+        "drupal/webform_config_ignore": "^1.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
         "pantheon-systems/drupal-integrations": "^8",
