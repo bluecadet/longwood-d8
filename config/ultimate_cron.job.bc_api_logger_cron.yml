@@ -1,0 +1,17 @@
+uuid: 4235919f-3e2e-4414-83df-644e9cdc028b
+langcode: en
+status: true
+dependencies:
+  module:
+    - bc_api_logger
+title: 'Default cron handler'
+id: bc_api_logger_cron
+weight: 0
+module: bc_api_logger
+callback: bc_api_logger_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
