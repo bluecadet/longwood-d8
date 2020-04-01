@@ -1,4 +1,4 @@
-uuid: c0e43aac-3916-47c2-8816-f9e5addd558f
+uuid: 3920ff13-2c9e-413c-b93d-616f0af1bc95
 langcode: en
 status: true
 dependencies:
@@ -20,23 +20,23 @@ selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  8c656612-da89-4e11-a8ce-42685f3897e9:
+  b7a10bf5-8c9d-47fe-afd4-eedab8996e61:
     settings:
       view: media_entity_browser
       view_display: image_entity_browser
       submit_text: 'Select Images'
       auto_select: false
-    uuid: 8c656612-da89-4e11-a8ce-42685f3897e9
+    uuid: b7a10bf5-8c9d-47fe-afd4-eedab8996e61
     weight: 1
     label: Images
     id: view
-  50c5f5be-63b0-4bcc-8fb2-04fa8b5ce73b:
+  e75e436f-db04-4303-a237-2fc4a4c278a2:
     settings:
       entity_type: media
       bundle: image
       form_mode: inline_entity_form
       submit_text: 'Save Image'
-    uuid: 50c5f5be-63b0-4bcc-8fb2-04fa8b5ce73b
+    uuid: e75e436f-db04-4303-a237-2fc4a4c278a2
     weight: 2
     label: 'Upload Image'
     id: entity_form

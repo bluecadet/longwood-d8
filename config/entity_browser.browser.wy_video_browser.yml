@@ -1,4 +1,4 @@
-uuid: 9d8c0e8f-349d-4e27-9402-154427af8a1a
+uuid: a8c85865-fa91-4ea4-9943-88a0a5818b96
 langcode: en
 status: true
 dependencies:
@@ -20,33 +20,33 @@ selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  3e0c91ac-db1e-474a-9901-47493caaeb59:
+  e082e2bc-9d59-42f6-b412-548668d1e2f9:
     settings:
       view: media_entity_browser
       view_display: all_video_entity_browser
       submit_text: 'Select Videos'
       auto_select: false
-    uuid: 3e0c91ac-db1e-474a-9901-47493caaeb59
+    uuid: e082e2bc-9d59-42f6-b412-548668d1e2f9
     weight: 1
     label: 'View Videos'
     id: view
-  f31b4020-8e64-438a-9a24-4a7b0f394824:
+  db24a097-a826-436b-9c9f-4e19137c3db6:
     settings:
       entity_type: media
       bundle: video
       form_mode: inline_entity_form
       submit_text: 'Save Video'
-    uuid: f31b4020-8e64-438a-9a24-4a7b0f394824
+    uuid: db24a097-a826-436b-9c9f-4e19137c3db6
     weight: 2
     label: 'Upload Local Video'
     id: entity_form
-  c295b113-d299-4557-9bd4-13ba5371a43d:
+  4cd10d0d-dff1-49af-a45a-8c407eb91b25:
     settings:
       entity_type: media
       bundle: video_embed
       form_mode: inline_entity_form
       submit_text: 'Save Video'
-    uuid: c295b113-d299-4557-9bd4-13ba5371a43d
+    uuid: 4cd10d0d-dff1-49af-a45a-8c407eb91b25
     weight: 3
     label: 'Upload Embeded Video'
     id: entity_form

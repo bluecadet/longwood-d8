@@ -1,4 +1,4 @@
-uuid: 46dd26b8-52f9-4e5f-9d38-6114a0686f44
+uuid: b8514d9e-42e5-4675-be92-27e316b3db68
 langcode: en
 status: true
 dependencies:
@@ -20,43 +20,43 @@ selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  28c98a6d-0ead-4b6c-b05b-1309aba742fb:
+  8f3e3f40-5e41-418e-ac66-b955390813c1:
     settings:
       view: media_entity_browser
       view_display: all_image_video_entity_browser
       submit_text: 'Select Videos'
       auto_select: false
-    uuid: 28c98a6d-0ead-4b6c-b05b-1309aba742fb
+    uuid: 8f3e3f40-5e41-418e-ac66-b955390813c1
     weight: 1
     label: 'View Media'
     id: view
-  cebc0fd4-7516-4b40-8554-868a2c151b1a:
+  25183df2-8b41-45d3-a485-f50e08570d4f:
     settings:
       entity_type: media
       bundle: image
       form_mode: inline_entity_form
       submit_text: 'Save Image'
-    uuid: cebc0fd4-7516-4b40-8554-868a2c151b1a
+    uuid: 25183df2-8b41-45d3-a485-f50e08570d4f
     weight: 2
     label: 'Upload Image'
     id: entity_form
-  dcbda9bc-8fe7-4845-ad4a-661a16a204d7:
+  cd05a6ec-2cb9-45fb-940d-accecd7ce02f:
     settings:
       entity_type: media
       bundle: video
       form_mode: inline_entity_form
       submit_text: 'Save Video'
-    uuid: dcbda9bc-8fe7-4845-ad4a-661a16a204d7
+    uuid: cd05a6ec-2cb9-45fb-940d-accecd7ce02f
     weight: 3
     label: 'Upload Local Video'
     id: entity_form
-  d60c07a2-a078-422f-b34f-8677716506a2:
+  86158a43-1369-40ec-bdbc-888492513b58:
     settings:
       entity_type: media
       bundle: video_embed
       form_mode: inline_entity_form
       submit_text: 'Save Video'
-    uuid: d60c07a2-a078-422f-b34f-8677716506a2
+    uuid: 86158a43-1369-40ec-bdbc-888492513b58
     weight: 4
     label: 'Upload Embeded Video'
     id: entity_form

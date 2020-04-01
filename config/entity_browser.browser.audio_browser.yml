@@ -1,4 +1,4 @@
-uuid: d3fc3e43-d8f7-47c4-91f7-c0ced459ab54
+uuid: 3c3523ba-4fd3-4822-94f2-c5bec84e6dd3
 langcode: en
 status: true
 dependencies:
@@ -20,23 +20,23 @@ selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  97154b17-fdea-484a-8879-f94ae0739e67:
+  44c0a89b-a8a9-44aa-84dd-7dec200a41b6:
     settings:
       view: media_entity_browser
       view_display: audio_entity_browser
       submit_text: 'Select Audio'
       auto_select: false
-    uuid: 97154b17-fdea-484a-8879-f94ae0739e67
+    uuid: 44c0a89b-a8a9-44aa-84dd-7dec200a41b6
     weight: 1
     label: 'View Field'
     id: view
-  9d98087e-08f4-460e-97fc-a1dca579b6bc:
+  21d9a54f-b2e5-4b3c-940b-0d51cf2a10d7:
     settings:
       entity_type: media
       bundle: audio
       form_mode: inline_entity_form
       submit_text: 'Save Audio'
-    uuid: 9d98087e-08f4-460e-97fc-a1dca579b6bc
+    uuid: 21d9a54f-b2e5-4b3c-940b-0d51cf2a10d7
     weight: 2
     label: 'Upload Audio'
     id: entity_form

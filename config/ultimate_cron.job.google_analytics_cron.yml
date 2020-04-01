@@ -1,14 +1,14 @@
-uuid: 285f5c2f-a77a-479e-afdf-379f5035ba62
+uuid: dd0416d0-3f7a-4e78-8d39-35ec397a44d3
 langcode: en
 status: true
 dependencies:
   module:
-    - redirect_404
+    - google_analytics
 title: 'Default cron handler'
-id: redirect_404_cron
+id: google_analytics_cron
 weight: 0
-module: redirect_404
-callback: redirect_404_cron
+module: google_analytics
+callback: google_analytics_cron
 scheduler:
   id: simple
 launcher:
