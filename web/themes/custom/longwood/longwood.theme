@@ -145,7 +145,7 @@ function data_field_value($entity, $variables, $field, $default_empty = NULL) {
 }
 
 /**
- * Helper function to get field values used in fractal, regardless of set
+ * Helper function to get field values used in fractal regardless of set
  * display_mode.
  *
  * @param object $entity
