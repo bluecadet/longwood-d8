@@ -2,6 +2,9 @@ name: Longwood
 type: theme
 description: A theme for Drupal 8
 base theme: stable
+version: '8.x-1.0'
+core: '8.x'
+project: 'Bluecadet'
 
 libraries:
   - longwood/global-css
@@ -19,20 +22,10 @@ regions:
   footer: 'Footer'
   sub_footer: 'Sub-Footer'
 
-ckeditor_stylesheets:
-  - assets/dist/css/editor.css
-
 component-libraries:
   fractal:
     paths:
       - fractal/patterns
 
-
-version: '8.x-1.0'
-core: '8.x'
-project: 'Bluecadet'
-
-
-dependencies:
-  - bluecadet_utilities
-  - components
+ckeditor_stylesheets:
+  - assets/dist/css/editor.css
