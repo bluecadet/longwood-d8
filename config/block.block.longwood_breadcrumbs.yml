@@ -1,0 +1,22 @@
+uuid: 406f9022-80cf-4f01-a811-b26648fe22bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - longwood
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: longwood_breadcrumbs
+theme: longwood
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

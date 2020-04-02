@@ -1,0 +1,20 @@
+uuid: 629e90cd-5827-4cc6-ad26-25313372e689
+langcode: en
+status: true
+dependencies:
+  theme:
+    - longwood
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: longwood_local_actions
+theme: longwood
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

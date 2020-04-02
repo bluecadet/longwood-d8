@@ -1,0 +1,22 @@
+uuid: 275112a4-60d0-43cb-ba2c-16bfaa42f101
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - longwood
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: longwood_messages
+theme: longwood
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

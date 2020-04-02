@@ -1,0 +1,22 @@
+uuid: 70bb2fc1-1522-4018-8c6f-855edaf27e96
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - longwood
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: longwood_content
+theme: longwood
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

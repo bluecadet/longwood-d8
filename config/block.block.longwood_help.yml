@@ -1,0 +1,22 @@
+uuid: 1ab2aa5a-2817-4199-89a4-87b8c6b04c21
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - longwood
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: longwood_help
+theme: longwood
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
