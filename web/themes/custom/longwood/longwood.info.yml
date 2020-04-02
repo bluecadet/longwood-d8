@@ -2,6 +2,7 @@ name: Longwood
 type: theme
 description: A theme for Drupal 8
 base theme: stable
+
 version: '8.x-1.0'
 core: '8.x'
 project: 'Bluecadet'
